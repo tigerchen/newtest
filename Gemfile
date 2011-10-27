@@ -34,5 +34,5 @@ end
 group :production do
   # For Engine Yard
   gem 'mysql2'
-  gem "bcrypt-ruby", :require => "bcrypt"
+  gem 'bcrypt-ruby', :require => 'bcrypt', :platform => 'ruby'
 end
