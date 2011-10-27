@@ -6,8 +6,6 @@ gem 'rails', '3.1.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'mysql2'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -31,4 +29,9 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+end
+
+group :production do
+  # For Engine Yard
+  gem 'mysql2'
 end
